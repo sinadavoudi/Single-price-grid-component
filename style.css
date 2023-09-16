@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(204, 43%, 93%);
+}
+p {
+    font-size: 16px;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 50%;
+
+}
+.join {
+    padding: 20px;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.join h3 {
+    color: hsl(179, 62%, 43%) ;
+    padding-bottom: 10px;
+    
+}
+.description {
+    text-align: left;
+    font-size: 14px;
+    /* width: 300px; */
+    line-height: 170%;
+    color: hsl(218, 22%, 67%);
+}
+.day30 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+    
+}
+.price {
+    padding: 20px;
+    background-color: hsl(179, 62%, 43%) ;
+}
+.price p:last-child {
+    color: red;
+    padding-bottom: 20px;
+}
+.dollar-text {
+    display: flex;
+    align-items: center;
+    color:hsla(203, 44%, 93%, 0.4);
+}
+.usd {
+    padding-right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.whyus {
+    padding: 10px 20px;
+    background-color: rgba(74,190,189,255);
+    
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.whyus h3 {
+    color: hsl(204, 43%, 93%);
+    /* padding-bottom: 10px; */
+}
+.whyus p {
+    width: 210px;
+    line-height: 160%;
+    color:hsla(203, 44%, 93%, 0.5);
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color:hsl(204, 43%, 93%);
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 15px 106px;
+    /* font-weight: 700; */
+    font-size: 16px;
+}
+
+
+@media screen and (min-width:1440px) {
+    
+    .all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "join join"
+          "price whyus";
+          width: 600px;
+          height: 400px;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      
+    .join { grid-area: join; }
+    
+    .price { grid-area: price; }
+    
+    .whyus { grid-area: whyus; }
+    .whyus {
+        border-radius: 0;
+        border-bottom-right-radius: 8px;
+    }
+    .price {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+    br {
+        display: none;
+    }
+    .join {
+        padding: 20px 30px;
+
+    }
+    .price {
+        padding: 20px 30px;
+    }
+    .whyus {
+        padding: 20px 30px;
+    }
+    .day30 {
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+    .description {
+        width: 500px;
+    }
+    button {
+        padding: 15px 92px;
+        white-space: nowrap;
+        margin-top: 35px;
+    }
+    .both-br {
+        display: block;
+    }
+      
+}
+
+
+
+
+
+.bbbbb {
+
+    color: hsl(179, 62%, 43%);
+    color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+}
